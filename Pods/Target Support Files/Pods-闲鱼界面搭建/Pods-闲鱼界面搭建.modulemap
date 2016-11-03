@@ -1,0 +1,6 @@
+framework module Pods_______ {
+  umbrella header "Pods-闲鱼界面搭建-umbrella.h"
+
+  export *
+  module * { export * }
+}
