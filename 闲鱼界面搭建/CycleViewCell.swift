@@ -36,9 +36,10 @@ class CycleViewCell: UICollectionViewCell {
             }
             
             imageView?.image = UIImage(named: "\(imageArray[indexPath.item])")
-            imageView?.image?.rightSizeImage(image:(imageView?.image!)!, Size: (imageView?.bounds.size)!, completion: { (image) in
+            imageView?.image?.rightSizeImage(image: (imageView?.image)!, Size: (imageView?.bounds.size)!, completion: { (image) in
                 self.imageView?.image = image
             })
+           
         }
         
     }
@@ -51,18 +52,11 @@ extension CycleViewCell {
     fileprivate func setupUI(){
         
         //添加控件
-        imageView = UIImageView(frame: .zero)
+        imageView = UIImageView(frame:bounds)
         
         contentView.addSubview(imageView!)
-        
-                
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        //更新frame
-        imageView?.frame = contentView.bounds
-        
+       
+
     }
     
 }

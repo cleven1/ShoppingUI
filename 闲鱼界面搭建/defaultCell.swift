@@ -14,7 +14,7 @@ class defaultCell: UITableViewCell {
     //MARK: 公共属性
     public var indexPath:IndexPath?{
         didSet{
-    
+            
             iconImage.image?.rightSizeImage(image: iconImage.image!, Size: iconImage.bounds.size, completion: { (image) in
                 self.iconImage.image = image
             })
@@ -52,8 +52,13 @@ extension defaultCell {
         contentView.addSubview(lb_details)
         contentView.addSubview(lb_price)
         contentView.addSubview(lb_expiredPrice)
-    
-      
+        
+        lb_details.layer.masksToBounds = true
+        lb_details.backgroundColor = UIColor.white
+        lb_price.layer.masksToBounds = true
+        lb_price.backgroundColor = UIColor.white
+        lb_expiredPrice.layer.masksToBounds = true
+        lb_expiredPrice.backgroundColor = UIColor.white
         
         //添加删除线
         let attr = NSMutableAttributedString(string: lb_expiredPrice.text!)

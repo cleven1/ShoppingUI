@@ -50,6 +50,9 @@ extension HeadCollectionViewCell {
         addSubview(imageView)
         addSubview(titleLabel)
         
+        titleLabel.layer.masksToBounds = true
+        titleLabel.backgroundColor = UIColor.white
+        
         imageView.snp.makeConstraints { (make) in
             
             make.centerX.equalTo(self)

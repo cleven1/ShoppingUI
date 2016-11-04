@@ -49,7 +49,7 @@ extension HomeViewController {
             return 1
         }
         
-        return 20
+        return 100
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,13 +66,12 @@ extension HomeViewController {
            cell = tableView.dequeueReusableCell(withIdentifier: listIdentifier, for: indexPath)
             break
         default:
-            
+          
           let cell = tableView.dequeueReusableCell(withIdentifier: defaultIdentifier, for: indexPath) as! defaultCell
             
             cell.indexPath = indexPath
         
-          return cell
-            
+            return cell
         }
         return cell!
     }

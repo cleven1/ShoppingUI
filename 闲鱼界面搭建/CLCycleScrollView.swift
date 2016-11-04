@@ -62,7 +62,7 @@ extension CLCycleScrollView {
         imageArray = [String]()
         for i in 0..<count{
             
-            imageArray?.append("srcoll_0\(i+1)")
+            imageArray?.append("scroll_0\(i+1)")
         }
         
         
@@ -123,7 +123,7 @@ extension CLCycleScrollView: UICollectionViewDataSource,UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cycle", for: indexPath) as! CycleViewCell
-        cell.backgroundColor = UIColor.cl_randomColor()
+//        cell.backgroundColor = UIColor.cl_randomColor()
         
         cell.imageArray = imageArray
         cell.indexPath = indexPath
@@ -138,7 +138,7 @@ extension CLCycleScrollView: UICollectionViewDataSource,UICollectionViewDelegate
     }
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
-        startTimer()
+//        startTimer()
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {

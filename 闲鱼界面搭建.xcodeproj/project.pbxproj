@@ -203,6 +203,7 @@
 				TargetAttributes = {
 					DFC415921DBE316D006ED66D = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G39QDEFRUW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -422,7 +423,9 @@
 			baseConfigurationReference = A3040763732D2D2D522F8F07 /* Pods-闲鱼界面搭建.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G39QDEFRUW;
 				INFOPLIST_FILE = "闲鱼界面搭建/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +438,9 @@
 			baseConfigurationReference = E019B6BC65572F37822658A0 /* Pods-闲鱼界面搭建.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G39QDEFRUW;
 				INFOPLIST_FILE = "闲鱼界面搭建/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
