@@ -99,12 +99,12 @@ extension CLHeadCollectionView {
         addSubview(IndicatorView)
         IndicatorView.backgroundColor = UIColor.blue
         IndicatorView.isHidden = true
-        IndicatorView.snp.makeConstraints { (make) in
-            make.left.equalTo(self)
-            make.bottom.equalTo(self).offset(-2)
-            make.width.equalTo(KScreenWidht / (item / 8))
-            make.height.equalTo(2)
-        }
+//        IndicatorView.snp.makeConstraints { (make) in
+//            make.left.equalTo(self)
+//            make.bottom.equalTo(self).offset(-2)
+//            make.width.equalTo(KScreenWidht / (item / 8))
+//            make.height.equalTo(2)
+//        }
     }
     
 }

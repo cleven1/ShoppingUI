@@ -138,7 +138,7 @@ extension CLCycleScrollView: UICollectionViewDataSource,UICollectionViewDelegate
     }
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
-//        startTimer()
+        startTimer()
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {

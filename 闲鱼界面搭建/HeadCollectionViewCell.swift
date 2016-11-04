@@ -53,7 +53,7 @@ extension HeadCollectionViewCell {
         titleLabel.layer.masksToBounds = true
         titleLabel.backgroundColor = UIColor.white
         
-        imageView.snp.makeConstraints { (make) in
+        imageView.snp.makeConstraints {(make) in
             
             make.centerX.equalTo(self)
             make.top.equalTo(self).offset(5)
