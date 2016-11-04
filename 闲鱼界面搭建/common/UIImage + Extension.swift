@@ -11,6 +11,23 @@ import UIKit
 extension UIImage {
     
     
+    /// 创建一个`点`的图像
+    class func cl_singleDotImage(color: UIColor) -> UIImage {
+        
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: 1, height: 1), false, UIScreen.main.scale)
+        
+        color.setFill()
+        UIRectFill(CGRect(x: 0, y: 0, width: 1, height: 1))
+        
+        let result = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        return result!
+    }
+    
+    
+    
     /// 本地图片裁剪
     ///
     /// - parameter image: 要裁剪的图片

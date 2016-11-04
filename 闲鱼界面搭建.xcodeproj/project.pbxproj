@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BA668D5962642483613C56B /* Pods_______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16E7882901B5C9954F415F5 /* Pods_______.framework */; };
+		DF0C30401DCC8E0F007CCB60 /* CLFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C303F1DCC8E0F007CCB60 /* CLFPS.swift */; };
 		DF1100F61DC88D7F0003EEA5 /* CLHeadCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1100F51DC88D7F0003EEA5 /* CLHeadCollectionView.swift */; };
 		DF1100F81DC896C70003EEA5 /* HeadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1100F71DC896C70003EEA5 /* HeadCollectionViewCell.swift */; };
 		DF6BC7761DC9C09B00CF1C64 /* CLCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7751DC9C09B00CF1C64 /* CLCycleScrollView.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		A3040763732D2D2D522F8F07 /* Pods-闲鱼界面搭建.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-闲鱼界面搭建.debug.xcconfig"; path = "Pods/Target Support Files/Pods-闲鱼界面搭建/Pods-闲鱼界面搭建.debug.xcconfig"; sourceTree = "<group>"; };
+		DF0C303F1DCC8E0F007CCB60 /* CLFPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLFPS.swift; sourceTree = "<group>"; };
 		DF1100F51DC88D7F0003EEA5 /* CLHeadCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHeadCollectionView.swift; sourceTree = "<group>"; };
 		DF1100F71DC896C70003EEA5 /* HeadCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadCollectionViewCell.swift; sourceTree = "<group>"; };
 		DF6BC7751DC9C09B00CF1C64 /* CLCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCycleScrollView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF0C303E1DCC8DF3007CCB60 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				DF0C303F1DCC8E0F007CCB60 /* CLFPS.swift */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
 		DF1100F41DC88D190003EEA5 /* sececndViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		DFC415951DBE316D006ED66D /* 闲鱼界面搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				DF0C303E1DCC8DF3007CCB60 /* FPS */,
 				DF767EE61DCA13DE000E089A /* common */,
 				DFC415961DBE316D006ED66D /* AppDelegate.swift */,
 				DFC415A81DBE318E006ED66D /* MainViewController.swift */,
@@ -301,6 +312,7 @@
 				DF767EEC1DCA13DE000E089A /* NSDate+Extension.swift in Sources */,
 				DF767EEE1DCA13DE000E089A /* UIColor+Extension.swift in Sources */,
 				DF767EF01DCA13DE000E089A /* UILabel+Extension.swift in Sources */,
+				DF0C30401DCC8E0F007CCB60 /* CLFPS.swift in Sources */,
 				DFC415971DBE316D006ED66D /* AppDelegate.swift in Sources */,
 				DF767EED1DCA13DE000E089A /* UIButton+Extension.swift in Sources */,
 				DFC415AB1DBE33CF006ED66D /* RootViewController.swift in Sources */,
@@ -348,6 +360,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -397,7 +410,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -423,11 +436,13 @@
 			baseConfigurationReference = A3040763732D2D2D522F8F07 /* Pods-闲鱼界面搭建.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = G39QDEFRUW;
 				INFOPLIST_FILE = "闲鱼界面搭建/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.------";
+				PRODUCT_BUNDLE_IDENTIFIER = cleven11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -438,11 +453,12 @@
 			baseConfigurationReference = E019B6BC65572F37822658A0 /* Pods-闲鱼界面搭建.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = G39QDEFRUW;
 				INFOPLIST_FILE = "闲鱼界面搭建/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.------";
+				PRODUCT_BUNDLE_IDENTIFIER = cleven11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
