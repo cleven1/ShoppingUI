@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>header</key>
+	<string>这里是header</string>
+	<key>footer</key>
+	<string>这里是footer</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>随便玩玩</string>
+			<key>accessory</key>
+			<string>UIImageView</string>
+			<key>accessory_img</key>
+			<string>arrow_right</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>测试测试测试</string>
+			<key>accessory</key>
+			<string>UIImageView</string>
+			<key>accessory_img</key>
+			<string>arrow_right</string>
+			<key>details</key>
+			<string>呵呵哒</string>
+			<key>cell_style</key>
+			<string>UITableViewCellStyleValue1</string>
+			<key>function_name</key>
+			<string>callService</string>
+		</dict>
+	</array>
+</dict>
+</plist>

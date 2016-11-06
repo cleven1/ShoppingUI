@@ -8,34 +8,90 @@
 
 import UIKit
 
+let itemCell = "itemCell"
 class DiscoverViewController: RootViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        // Do any additional setup after loading the view.
+        perpareData()
+        
+        tableView?.register(UITableViewCell.self ,forCellReuseIdentifier: itemCell)
     }
     
     deinit{
-        
-        
+
         print("销毁了")
     }
+    //MARK: 属性
+    
+    //加载plist
+   fileprivate var listData: NSDictionary = {
+        
+        let path = Bundle.main.path(forResource: "setting.plist", ofType: nil)
+        
+        var listData:NSDictionary = NSDictionary()
+        
+        listData = NSDictionary(contentsOfFile: path!)!
+        
+        return listData
+    }()
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    fileprivate var groups:[[String:AnyObject]] = [[String:AnyObject]]()
+    
+}
+
+extension DiscoverViewController {
+    
+    fileprivate func perpareData(){
+    
+        groups = listData.object(forKey: "items") as! [[String:AnyObject]]
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension DiscoverViewController{
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return groups.count
+        
     }
-    */
-
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        let item = groups[section]
+        
+        return item.count
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: itemCell, for: indexPath)
+        
+        cell.backgroundColor = UIColor.cl_randomColor()
+        
+        let item = groups[indexPath.section]
+       
+        cell.detailTextLabel?.text = item["details"] as? String
+        cell.textLabel?.text = item["title"] as? String
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+            
+            return 44
+        }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        
+        return listData.object(forKey: "footer") as? String
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return listData.object(forKey: "header") as? String
+    }
 }
