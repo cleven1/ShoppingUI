@@ -12,6 +12,7 @@
 		DF1100F61DC88D7F0003EEA5 /* CLHeadCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1100F51DC88D7F0003EEA5 /* CLHeadCollectionView.swift */; };
 		DF1100F81DC896C70003EEA5 /* HeadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1100F71DC896C70003EEA5 /* HeadCollectionViewCell.swift */; };
 		DF45785B1DCF0CCD0093C6E4 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF45785A1DCF0CCD0093C6E4 /* setting.plist */; };
+		DF45785D1DD078BC0093C6E4 /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF45785C1DD078BC0093C6E4 /* settingCell.swift */; };
 		DF6BC7761DC9C09B00CF1C64 /* CLCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7751DC9C09B00CF1C64 /* CLCycleScrollView.swift */; };
 		DF6BC7781DC9CBD700CF1C64 /* CycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7771DC9CBD700CF1C64 /* CycleViewCell.swift */; };
 		DF767EEC1DCA13DE000E089A /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF767EE71DCA13DE000E089A /* NSDate+Extension.swift */; };
@@ -39,6 +40,7 @@
 		DF1100F51DC88D7F0003EEA5 /* CLHeadCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHeadCollectionView.swift; sourceTree = "<group>"; };
 		DF1100F71DC896C70003EEA5 /* HeadCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadCollectionViewCell.swift; sourceTree = "<group>"; };
 		DF45785A1DCF0CCD0093C6E4 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
+		DF45785C1DD078BC0093C6E4 /* settingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		DF6BC7751DC9C09B00CF1C64 /* CLCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCycleScrollView.swift; sourceTree = "<group>"; };
 		DF6BC7771DC9CBD700CF1C64 /* CycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleViewCell.swift; sourceTree = "<group>"; };
 		DF767EE71DCA13DE000E089A /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				DFC415AE1DBE3DBA006ED66D /* DiscoverViewController.swift */,
 				DF45785A1DCF0CCD0093C6E4 /* setting.plist */,
+				DF45785C1DD078BC0093C6E4 /* settingCell.swift */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				DFC415A91DBE318E006ED66D /* MainViewController.swift in Sources */,
 				DFC415B21DBE40F6006ED66D /* headCell.swift in Sources */,
 				DF1100F61DC88D7F0003EEA5 /* CLHeadCollectionView.swift in Sources */,
+				DF45785D1DD078BC0093C6E4 /* settingCell.swift in Sources */,
 				DF767EF21DCA143D000E089A /* UIImage + Extension.swift in Sources */,
 				DF767EEC1DCA13DE000E089A /* NSDate+Extension.swift in Sources */,
 				DF767EEE1DCA13DE000E089A /* UIColor+Extension.swift in Sources */,

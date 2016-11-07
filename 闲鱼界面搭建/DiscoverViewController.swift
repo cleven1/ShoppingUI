@@ -8,17 +8,20 @@
 
 import UIKit
 
-let itemCell = "itemCell"
+
 class DiscoverViewController: RootViewController {
 
+   
+    let tb = UITableView(frame: .zero, style: .grouped)
     
     override func viewDidLoad() {
+        self.tableView = tb
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         perpareData()
         
-        tableView?.register(UITableViewCell.self ,forCellReuseIdentifier: itemCell)
     }
+    
     
     deinit{
 
@@ -68,14 +71,12 @@ extension DiscoverViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: itemCell, for: indexPath)
-        
-        cell.backgroundColor = UIColor.cl_randomColor()
         
         let item = groups[indexPath.section]
-       
-        cell.detailTextLabel?.text = item["details"] as? String
-        cell.textLabel?.text = item["title"] as? String
+    
+       let cell = settingCell.setCellWithTableView(tableView: tableView, item: item) as! settingCell
+        
+        cell.item = item
         
         return cell
     }

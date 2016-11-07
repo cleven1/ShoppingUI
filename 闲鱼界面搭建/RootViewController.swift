@@ -42,7 +42,7 @@ extension RootViewController {
     fileprivate func setUpUI(){
         
         //实例化tableView
-        tableView = UITableView(frame: .zero, style: .grouped)
+        tableView = UITableView(frame: .zero, style: .plain)
         view = tableView
         
         tableView?.backgroundColor = UIColor.white

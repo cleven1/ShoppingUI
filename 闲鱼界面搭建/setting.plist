@@ -11,10 +11,14 @@
 		<dict>
 			<key>title</key>
 			<string>随便玩玩</string>
+			<key>details</key>
+			<string>噢噢噢噢</string>
 			<key>accessory</key>
-			<string>UIImageView</string>
+			<string>UISwitch</string>
 			<key>accessory_img</key>
 			<string>arrow_right</string>
+			<key>cell_style</key>
+			<string>UITableViewCellStyleSubtitle</string>
 		</dict>
 		<dict>
 			<key>title</key>

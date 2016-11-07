@@ -94,4 +94,9 @@ extension HomeViewController {
         }
         return 80
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.0
+    }
+  
 }
