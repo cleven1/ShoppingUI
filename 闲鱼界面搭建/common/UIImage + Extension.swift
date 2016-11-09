@@ -103,6 +103,7 @@ extension UIImage {
             let path = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius)
             
             path.addClip()
+            
             self.draw(in: rect)
             
             let result = UIGraphicsGetImageFromCurrentImageContext()
@@ -110,7 +111,6 @@ extension UIImage {
             UIGraphicsEndImageContext()
             
             DispatchQueue.main.async {
-                
                 guard let image = result else{
                     return
                 }

@@ -1,5 +1,5 @@
 //
-//  DiscoverViewController.swift
+//  SetController.swift
 //  闲鱼界面搭建
 //
 //  Created by cleven on 2016/10/24.
@@ -9,19 +9,23 @@
 import UIKit
 
 
-class DiscoverViewController: RootViewController {
+class SetController: UIViewController {
 
    
-    let tb = UITableView(frame: .zero, style: .grouped)
+    let tableView = UITableView(frame: .zero, style: .grouped)
+    
+    override func loadView() {
+        view = tableView
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
     
     override func viewDidLoad() {
-        self.tableView = tb
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        
         perpareData()
         
     }
-    
     
     deinit{
 
@@ -45,7 +49,7 @@ class DiscoverViewController: RootViewController {
     
 }
 
-extension DiscoverViewController {
+extension SetController {
     
     fileprivate func perpareData(){
     
@@ -54,14 +58,14 @@ extension DiscoverViewController {
     
 }
 
-extension DiscoverViewController{
+extension SetController:UITableViewDelegate,UITableViewDataSource{
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         
         return groups.count
         
     }
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         let item = groups[section]
         
@@ -69,7 +73,7 @@ extension DiscoverViewController{
         
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
         let item = groups[indexPath.section]
@@ -81,7 +85,7 @@ extension DiscoverViewController{
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
             
             return 44

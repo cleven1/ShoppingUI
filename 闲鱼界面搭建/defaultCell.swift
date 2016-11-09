@@ -15,10 +15,10 @@ class defaultCell: UITableViewCell {
     public var indexPath:IndexPath?{
         didSet{
             
-            iconImage.image?.rightSizeImage(image: iconImage.image!, Size: iconImage.bounds.size, completion: { (image) in
-                self.iconImage.image = image
-            })
-            
+//            iconImage.image?.rightSizeImage(image: iconImage.image!, Size: iconImage.bounds.size, completion: { (image) in
+//                self.iconImage.image = image
+//            })
+           
         }
         
     }
@@ -35,8 +35,9 @@ class defaultCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    //MARK: 属性
+    //MARK: 属性CGPoint(x: 10, y: 5)  CGSize(width: 100, height: contentView.bounds.size.height - 10)
     fileprivate let iconImage: UIImageView = UIImageView(imageName: "iphone")
+    
     fileprivate let lb_details = UILabel(text: "iPhone7iPhone7iPhone7", textColor: UIColor.darkGray, fontSize: 17, textAlignment: .left, MaxLayoutWidth: 0)
     //价格
     fileprivate let lb_price = UILabel(text: "$123", textColor: UIColor.red, fontSize: 14, textAlignment: .left, MaxLayoutWidth: 0)
@@ -52,7 +53,16 @@ extension defaultCell {
         contentView.addSubview(lb_details)
         contentView.addSubview(lb_price)
         contentView.addSubview(lb_expiredPrice)
-        
+
+        //设置图片
+        iconImage.image?.rightSizeImage(image: iconImage.image!, Size: iconImage.frame.size, completion: { (image) in
+            //设置圆角
+            image.cornerImageWithSize(size: self.iconImage.frame.size, fillColor: .white, cornerRadius: 15, completion: { (img) in
+                self.iconImage.image = img
+            })
+            
+        })
+      
         lb_details.layer.masksToBounds = true
         lb_details.backgroundColor = UIColor.white
         lb_price.layer.masksToBounds = true
@@ -92,6 +102,12 @@ extension defaultCell {
         self.layer.drawsAsynchronously = true
         self.layer.shouldRasterize = true
         self.layer.rasterizationScale = UIScreen.main.scale
+        
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
         
     }
     

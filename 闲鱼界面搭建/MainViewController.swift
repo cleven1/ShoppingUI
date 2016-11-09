@@ -29,7 +29,9 @@ extension MainViewController {
         
         addChildViewController(title: "首页", vc: HomeViewController(), imageName: "tabbar_home")
         
-        addChildViewController(title:"发现", vc: DiscoverViewController(), imageName: "tabbar_discover")
+        addChildViewController(title:"发现", vc: DisCoverController(), imageName: "tabbar_discover")
+        
+        addChildViewController(title:"设置", vc: SetController(), imageName: "tabbar_discover")
         
         
     }

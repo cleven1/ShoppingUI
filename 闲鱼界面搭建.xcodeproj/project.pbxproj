@@ -11,6 +11,7 @@
 		DF0C30401DCC8E0F007CCB60 /* CLFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C303F1DCC8E0F007CCB60 /* CLFPS.swift */; };
 		DF1100F61DC88D7F0003EEA5 /* CLHeadCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1100F51DC88D7F0003EEA5 /* CLHeadCollectionView.swift */; };
 		DF1100F81DC896C70003EEA5 /* HeadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1100F71DC896C70003EEA5 /* HeadCollectionViewCell.swift */; };
+		DF1E57DA1DD301C100471D46 /* DisCoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1E57D91DD301C000471D46 /* DisCoverController.swift */; };
 		DF45785B1DCF0CCD0093C6E4 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF45785A1DCF0CCD0093C6E4 /* setting.plist */; };
 		DF45785D1DD078BC0093C6E4 /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF45785C1DD078BC0093C6E4 /* settingCell.swift */; };
 		DF6BC7761DC9C09B00CF1C64 /* CLCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7751DC9C09B00CF1C64 /* CLCycleScrollView.swift */; };
@@ -27,7 +28,7 @@
 		DFC415A91DBE318E006ED66D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415A81DBE318E006ED66D /* MainViewController.swift */; };
 		DFC415AB1DBE33CF006ED66D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415AA1DBE33CF006ED66D /* RootViewController.swift */; };
 		DFC415AD1DBE3DAE006ED66D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415AC1DBE3DAE006ED66D /* HomeViewController.swift */; };
-		DFC415AF1DBE3DBA006ED66D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415AE1DBE3DBA006ED66D /* DiscoverViewController.swift */; };
+		DFC415AF1DBE3DBA006ED66D /* SetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415AE1DBE3DBA006ED66D /* SetController.swift */; };
 		DFC415B21DBE40F6006ED66D /* headCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415B11DBE40F6006ED66D /* headCell.swift */; };
 		DFC415B41DBE4102006ED66D /* scrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415B31DBE4102006ED66D /* scrollCell.swift */; };
 		DFC415B61DBE4110006ED66D /* listCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415B51DBE4110006ED66D /* listCell.swift */; };
@@ -39,6 +40,7 @@
 		DF0C303F1DCC8E0F007CCB60 /* CLFPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLFPS.swift; sourceTree = "<group>"; };
 		DF1100F51DC88D7F0003EEA5 /* CLHeadCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHeadCollectionView.swift; sourceTree = "<group>"; };
 		DF1100F71DC896C70003EEA5 /* HeadCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF1E57D91DD301C000471D46 /* DisCoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisCoverController.swift; sourceTree = "<group>"; };
 		DF45785A1DCF0CCD0093C6E4 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
 		DF45785C1DD078BC0093C6E4 /* settingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		DF6BC7751DC9C09B00CF1C64 /* CLCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCycleScrollView.swift; sourceTree = "<group>"; };
@@ -57,7 +59,7 @@
 		DFC415A81DBE318E006ED66D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DFC415AA1DBE33CF006ED66D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		DFC415AC1DBE3DAE006ED66D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		DFC415AE1DBE3DBA006ED66D /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		DFC415AE1DBE3DBA006ED66D /* SetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetController.swift; sourceTree = "<group>"; };
 		DFC415B11DBE40F6006ED66D /* headCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headCell.swift; sourceTree = "<group>"; };
 		DFC415B31DBE4102006ED66D /* scrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollCell.swift; sourceTree = "<group>"; };
 		DFC415B51DBE4110006ED66D /* listCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listCell.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 			name = secondViews;
 			sourceTree = "<group>";
 		};
+		DF1E57D81DD3018800471D46 /* DisCover */ = {
+			isa = PBXGroup;
+			children = (
+				DF1E57D91DD301C000471D46 /* DisCoverController.swift */,
+			);
+			name = DisCover;
+			sourceTree = "<group>";
+		};
 		DF4578581DCF0C770093C6E4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,14 +133,14 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
-		DF4578591DCF0C960093C6E4 /* Discover */ = {
+		DF4578591DCF0C960093C6E4 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				DFC415AE1DBE3DBA006ED66D /* DiscoverViewController.swift */,
+				DFC415AE1DBE3DBA006ED66D /* SetController.swift */,
 				DF45785A1DCF0CCD0093C6E4 /* setting.plist */,
 				DF45785C1DD078BC0093C6E4 /* settingCell.swift */,
 			);
-			name = Discover;
+			name = Setting;
 			sourceTree = "<group>";
 		};
 		DF6BC7741DC9C04E00CF1C64 /* firstViews */ = {
@@ -182,7 +192,8 @@
 				DF767EE61DCA13DE000E089A /* common */,
 				DF0C303E1DCC8DF3007CCB60 /* FPS */,
 				DF4578581DCF0C770093C6E4 /* Home */,
-				DF4578591DCF0C960093C6E4 /* Discover */,
+				DF1E57D81DD3018800471D46 /* DisCover */,
+				DF4578591DCF0C960093C6E4 /* Setting */,
 				DFC4159D1DBE316D006ED66D /* Assets.xcassets */,
 				DFC4159F1DBE316D006ED66D /* LaunchScreen.storyboard */,
 				DFC415A21DBE316D006ED66D /* Info.plist */,
@@ -325,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1E57DA1DD301C100471D46 /* DisCoverController.swift in Sources */,
 				DF1100F81DC896C70003EEA5 /* HeadCollectionViewCell.swift in Sources */,
 				DF6BC7781DC9CBD700CF1C64 /* CycleViewCell.swift in Sources */,
 				DFC415B41DBE4102006ED66D /* scrollCell.swift in Sources */,
@@ -342,7 +354,7 @@
 				DFC415AB1DBE33CF006ED66D /* RootViewController.swift in Sources */,
 				DFC415B61DBE4110006ED66D /* listCell.swift in Sources */,
 				DFC415AD1DBE3DAE006ED66D /* HomeViewController.swift in Sources */,
-				DFC415AF1DBE3DBA006ED66D /* DiscoverViewController.swift in Sources */,
+				DFC415AF1DBE3DBA006ED66D /* SetController.swift in Sources */,
 				DF6BC7761DC9C09B00CF1C64 /* CLCycleScrollView.swift in Sources */,
 				DF767EEF1DCA13DE000E089A /* UIImageView+Extension.swift in Sources */,
 				DFC415B81DBE4244006ED66D /* defaultCell.swift in Sources */,
