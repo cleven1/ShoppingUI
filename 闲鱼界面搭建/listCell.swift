@@ -14,7 +14,11 @@ class listCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         backgroundColor = UIColor.yellow
-        textLabel?.text = "listcell"
+        
+        let TextView = TextScrollView(frame: CGRect(x: 0, y: 0, width: KScreenWidht, height: 80))
+        
+        contentView.addSubview(TextView)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

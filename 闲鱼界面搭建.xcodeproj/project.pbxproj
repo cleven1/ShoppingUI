@@ -22,6 +22,8 @@
 		DF767EEF1DCA13DE000E089A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF767EEA1DCA13DE000E089A /* UIImageView+Extension.swift */; };
 		DF767EF01DCA13DE000E089A /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF767EEB1DCA13DE000E089A /* UILabel+Extension.swift */; };
 		DF767EF21DCA143D000E089A /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF767EF11DCA143D000E089A /* UIImage + Extension.swift */; };
+		DFB842631DD5C04300BAD08E /* TextScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB842621DD5C04300BAD08E /* TextScrollView.swift */; };
+		DFB842651DD5C1E100BAD08E /* TextScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB842641DD5C1E100BAD08E /* TextScrollCell.swift */; };
 		DFC415971DBE316D006ED66D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC415961DBE316D006ED66D /* AppDelegate.swift */; };
 		DFC4159E1DBE316D006ED66D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC4159D1DBE316D006ED66D /* Assets.xcassets */; };
 		DFC415A11DBE316D006ED66D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC4159F1DBE316D006ED66D /* LaunchScreen.storyboard */; };
@@ -51,6 +53,8 @@
 		DF767EEA1DCA13DE000E089A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		DF767EEB1DCA13DE000E089A /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		DF767EF11DCA143D000E089A /* UIImage + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
+		DFB842621DD5C04300BAD08E /* TextScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextScrollView.swift; sourceTree = "<group>"; };
+		DFB842641DD5C1E100BAD08E /* TextScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextScrollCell.swift; sourceTree = "<group>"; };
 		DFC415931DBE316D006ED66D /* 闲鱼界面搭建.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "闲鱼界面搭建.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC415961DBE316D006ED66D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC4159D1DBE316D006ED66D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				DFC415B01DBE40CE006ED66D /* cells */,
 				DF6BC7741DC9C04E00CF1C64 /* firstViews */,
 				DF1100F41DC88D190003EEA5 /* secondViews */,
+				DFB842611DD5BFF100BAD08E /* thirdViews */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -163,6 +168,15 @@
 				DF767EF11DCA143D000E089A /* UIImage + Extension.swift */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		DFB842611DD5BFF100BAD08E /* thirdViews */ = {
+			isa = PBXGroup;
+			children = (
+				DFB842621DD5C04300BAD08E /* TextScrollView.swift */,
+				DFB842641DD5C1E100BAD08E /* TextScrollCell.swift */,
+			);
+			name = thirdViews;
 			sourceTree = "<group>";
 		};
 		DFC4158A1DBE316D006ED66D = {
@@ -339,7 +353,9 @@
 				DF1E57DA1DD301C100471D46 /* DisCoverController.swift in Sources */,
 				DF1100F81DC896C70003EEA5 /* HeadCollectionViewCell.swift in Sources */,
 				DF6BC7781DC9CBD700CF1C64 /* CycleViewCell.swift in Sources */,
+				DFB842651DD5C1E100BAD08E /* TextScrollCell.swift in Sources */,
 				DFC415B41DBE4102006ED66D /* scrollCell.swift in Sources */,
+				DFB842631DD5C04300BAD08E /* TextScrollView.swift in Sources */,
 				DFC415A91DBE318E006ED66D /* MainViewController.swift in Sources */,
 				DFC415B21DBE40F6006ED66D /* headCell.swift in Sources */,
 				DF1100F61DC88D7F0003EEA5 /* CLHeadCollectionView.swift in Sources */,
