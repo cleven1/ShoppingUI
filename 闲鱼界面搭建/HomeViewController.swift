@@ -78,6 +78,8 @@ extension HomeViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         print(indexPath.row)
         
     }
@@ -99,4 +101,5 @@ extension HomeViewController {
         return 0.0
     }
   
+    
 }
