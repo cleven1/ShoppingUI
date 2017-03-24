@@ -107,7 +107,7 @@ extension CLCycleScrollView {
     
 }
 
-//MARK: 数据源,代码方法
+//MARK: 数据源,代理方法
 extension CLCycleScrollView: UICollectionViewDataSource,UICollectionViewDelegate{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -1,12 +1,18 @@
 PODS:
+  - lottie-ios (1.5.1)
   - SnapKit (3.0.2)
+  - SwiftyMarkdown (0.3.1)
 
 DEPENDENCIES:
+  - lottie-ios
   - SnapKit (~> 3.0.2)
+  - SwiftyMarkdown
 
 SPEC CHECKSUMS:
+  lottie-ios: f680a7c4cb7a567ecf258fde0f967913aff111b8
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  SwiftyMarkdown: 7968642d89b771510e98f91d307af2e8bb51ce94
 
-PODFILE CHECKSUM: 04ed592c6212c7e47adce260c824f27e1b2a0c31
+PODFILE CHECKSUM: f049cd999eb382ee0e255f0b05790b6dfda044f0
 
 COCOAPODS: 1.1.0.rc.3

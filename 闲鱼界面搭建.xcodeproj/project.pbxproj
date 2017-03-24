@@ -12,6 +12,10 @@
 		DF1100F61DC88D7F0003EEA5 /* CLHeadCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1100F51DC88D7F0003EEA5 /* CLHeadCollectionView.swift */; };
 		DF1100F81DC896C70003EEA5 /* HeadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1100F71DC896C70003EEA5 /* HeadCollectionViewCell.swift */; };
 		DF1E57DA1DD301C100471D46 /* DisCoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1E57D91DD301C000471D46 /* DisCoverController.swift */; };
+		DF2824001E84BAE400F008E6 /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = DF2823FE1E84BAE400F008E6 /* vcTransition1.json */; };
+		DF2824011E84BAE400F008E6 /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = DF2823FF1E84BAE400F008E6 /* vcTransition2.json */; };
+		DF2824031E84C66500F008E6 /* CLLottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2824021E84C66500F008E6 /* CLLottieAnimation.swift */; };
+		DF2824051E84D18500F008E6 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2824041E84D18500F008E6 /* TransitionViewController.swift */; };
 		DF45785B1DCF0CCD0093C6E4 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF45785A1DCF0CCD0093C6E4 /* setting.plist */; };
 		DF45785D1DD078BC0093C6E4 /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF45785C1DD078BC0093C6E4 /* settingCell.swift */; };
 		DF6BC7761DC9C09B00CF1C64 /* CLCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7751DC9C09B00CF1C64 /* CLCycleScrollView.swift */; };
@@ -43,6 +47,10 @@
 		DF1100F51DC88D7F0003EEA5 /* CLHeadCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHeadCollectionView.swift; sourceTree = "<group>"; };
 		DF1100F71DC896C70003EEA5 /* HeadCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadCollectionViewCell.swift; sourceTree = "<group>"; };
 		DF1E57D91DD301C000471D46 /* DisCoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisCoverController.swift; sourceTree = "<group>"; };
+		DF2823FE1E84BAE400F008E6 /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
+		DF2823FF1E84BAE400F008E6 /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		DF2824021E84C66500F008E6 /* CLLottieAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLottieAnimation.swift; sourceTree = "<group>"; };
+		DF2824041E84D18500F008E6 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		DF45785A1DCF0CCD0093C6E4 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
 		DF45785C1DD078BC0093C6E4 /* settingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		DF6BC7751DC9C09B00CF1C64 /* CLCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCycleScrollView.swift; sourceTree = "<group>"; };
@@ -121,7 +129,11 @@
 		DF1E57D81DD3018800471D46 /* DisCover */ = {
 			isa = PBXGroup;
 			children = (
+				DF2823FE1E84BAE400F008E6 /* vcTransition1.json */,
+				DF2823FF1E84BAE400F008E6 /* vcTransition2.json */,
 				DF1E57D91DD301C000471D46 /* DisCoverController.swift */,
+				DF2824041E84D18500F008E6 /* TransitionViewController.swift */,
+				DF2824021E84C66500F008E6 /* CLLottieAnimation.swift */,
 			);
 			name = DisCover;
 			sourceTree = "<group>";
@@ -261,7 +273,7 @@
 				TargetAttributes = {
 					DFC415921DBE316D006ED66D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = G39QDEFRUW;
+						DevelopmentTeam = HQ4PZ36DEN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -290,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF45785B1DCF0CCD0093C6E4 /* setting.plist in Resources */,
+				DF2824011E84BAE400F008E6 /* vcTransition2.json in Resources */,
 				DFC415A11DBE316D006ED66D /* LaunchScreen.storyboard in Resources */,
 				DFC4159E1DBE316D006ED66D /* Assets.xcassets in Resources */,
+				DF2824001E84BAE400F008E6 /* vcTransition1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1E57DA1DD301C100471D46 /* DisCoverController.swift in Sources */,
+				DF2824031E84C66500F008E6 /* CLLottieAnimation.swift in Sources */,
 				DF1100F81DC896C70003EEA5 /* HeadCollectionViewCell.swift in Sources */,
 				DF6BC7781DC9CBD700CF1C64 /* CycleViewCell.swift in Sources */,
 				DFB842651DD5C1E100BAD08E /* TextScrollCell.swift in Sources */,
@@ -374,6 +389,7 @@
 				DF6BC7761DC9C09B00CF1C64 /* CLCycleScrollView.swift in Sources */,
 				DF767EEF1DCA13DE000E089A /* UIImageView+Extension.swift in Sources */,
 				DFC415B81DBE4244006ED66D /* defaultCell.swift in Sources */,
+				DF2824051E84D18500F008E6 /* TransitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,12 +506,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = G39QDEFRUW;
+				DEVELOPMENT_TEAM = HQ4PZ36DEN;
 				INFOPLIST_FILE = "闲鱼界面搭建/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cleven111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -506,12 +523,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = G39QDEFRUW;
+				DEVELOPMENT_TEAM = HQ4PZ36DEN;
 				INFOPLIST_FILE = "闲鱼界面搭建/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cleven111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

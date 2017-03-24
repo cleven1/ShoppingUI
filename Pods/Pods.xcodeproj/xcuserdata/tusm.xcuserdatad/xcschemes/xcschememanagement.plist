@@ -14,15 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyMarkdown.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>lottie-ios.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3C58EF0CFAFEA4D89B7B66CAB204AFC2</key>
+		<key>5C09C598100A4E04296C474DD9611182</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC24FF03D2BE9A0F173D550BA8A9B5A0</key>
+		<key>892845D5FE7AA5B4AD89809F2B1B4EDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C000F6D15E1D5C27CCC6DA3105D7902F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB9A4C954BB72174D9CCEC81BCA96B46</key>
 		<dict>
 			<key>primary</key>
 			<true/>

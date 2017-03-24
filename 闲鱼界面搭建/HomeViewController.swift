@@ -26,8 +26,7 @@ class HomeViewController: RootViewController {
         tableView?.register(scrollCell.self, forCellReuseIdentifier: scrollIdentifier)
         tableView?.register(listCell.self, forCellReuseIdentifier: listIdentifier)
         tableView?.register(defaultCell.self, forCellReuseIdentifier: defaultIdentifier)
-        
-      
+    
         
     }
     deinit {

@@ -67,9 +67,9 @@ extension SetController:UITableViewDelegate,UITableViewDataSource{
     }
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        let item = groups[section]
+//        let item = groups[section]
         
-        return item.count
+        return 1
         
     }
     

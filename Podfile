@@ -5,5 +5,7 @@ platform :ios, '8.0'
 
 target '闲鱼界面搭建' do
 pod 'SnapKit', '~> 3.0.2'
+pod 'SwiftyMarkdown'
+pod 'lottie-ios'
 end
 
