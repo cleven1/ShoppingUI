@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 let homeIdentifier:String = "homecell"
 let scrollIdentifier:String = "scrollcell"
 let listIdentifier:String = "listcell"
@@ -20,7 +22,8 @@ class HomeViewController: RootViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
-        
+        let player = DORAFFMoviePlayerController()
+        player.prepareToPlay()
         
         tableView?.register(headCell.self, forCellReuseIdentifier: homeIdentifier)
         tableView?.register(scrollCell.self, forCellReuseIdentifier: scrollIdentifier)

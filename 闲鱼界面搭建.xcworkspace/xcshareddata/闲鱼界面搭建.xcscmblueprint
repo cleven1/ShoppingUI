@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6FCF4C1E04F900780EAAD4C3B19EA7A9D1829D06",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "38ABC3013F281EE6BEE2B90CE83B77D1E420B09A" : 9223372036854775807,
+    "6FCF4C1E04F900780EAAD4C3B19EA7A9D1829D06" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "70FD1CBE-D9D8-4732-98C0-E8D1833A1C9F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "38ABC3013F281EE6BEE2B90CE83B77D1E420B09A" : "%E9%97%B2%E9%B1%BC%E7%95%8C%E9%9D%A2%E6%90%AD%E5%BB%BA\/DORAMediaPlayer\/",
+    "6FCF4C1E04F900780EAAD4C3B19EA7A9D1829D06" : "%E9%97%B2%E9%B1%BC%E7%95%8C%E9%9D%A2%E6%90%AD%E5%BB%BA\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "闲鱼界面搭建",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "闲鱼界面搭建.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/phab.camdora.me\/diffusion\/DMP\/doramediaplayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "38ABC3013F281EE6BEE2B90CE83B77D1E420B09A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cleven1\/ShoppingUI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FCF4C1E04F900780EAAD4C3B19EA7A9D1829D06"
+    }
+  ]
+}
